@@ -1,6 +1,6 @@
 admins: [
   delete_sync: false
-  delete_on_edit: null
+  delete_on_ettdit: null
 past:
   delay: 3.0
 plugins:
