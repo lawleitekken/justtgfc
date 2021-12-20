@@ -1,5 +1,10 @@
 admins: []
-forward
+forwards:
+- source: -1001350596281
+  dest:
+  - -1001706330415
+  offset: 1
+  end: 3000
 show_forwarded_from: false
 live:
   delete_sync: false
@@ -7,7 +12,8 @@ live:
 past:
   delay: 3.0
 plugins:
-  filter:
+  replace:
     text:
-      blacklist:
-      - badword
+      '@MovieJunction - ': 'Join @REQ_MVS - '
+      '@MovieJunctionChannel': Join @REQ_MVS
+      regex: true
